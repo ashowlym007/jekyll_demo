@@ -11,15 +11,19 @@ title: ConpanionAimSouthAmerica
 </div>
 <h2 id="left">建站目的</h2>
 <img src="https://raw.githubusercontent.com/ashowlym007/jekyll_demo/gh-pages/images/keji.jpg" alt="little dog" width="128" height="128"/>
-<div>
-<iframe src="{{ site.baseurl }}/html/3.html" width="800"></iframe>
-</div>
 <h2 id="left">文章列表</h2>
 
 <h2>{{ page.title }}</h2>
 <p>new</p>
 <ul>
 	{% for post in site.posts %}
-		<li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+		<li>{{ post.date | date_to_string }}
+    <div>
+      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+      <article>
+      Test article
+      </article>
+    </div>
+    </li>
 	{% endfor %}
 </ul>
