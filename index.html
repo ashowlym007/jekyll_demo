@@ -31,8 +31,8 @@ title: Conpanion Aim South America
 <ul>
 	{% for post in site.posts %}
 		<li>{{ post.date | date_to_string }}
-    <div>
-      <a id="left" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+    <div id="left">
+      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
     </div>
     </li>
 	{% endfor %}
